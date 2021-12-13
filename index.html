@@ -9,51 +9,71 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
+  <!-- Navigation -->
+  <div class="sidenav">
+    <img class="closebtn" src="images\icon-close.svg" alt="">
+    <br>
+    <div class="navopts">
+      <a>Collections</a>
+      <a>Men</a>
+      <a>Women</a>
+      <a>About</a>
+      <a>Contact</a>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  </div>
   <header>
-    <img src="images\icon-menu.svg" alt="">
-    <img src="images\logo.svg" alt="">
+    <div class="header-items">
+      <div class="">
+        <img class="sidenavbtn" src="images\icon-menu.svg" alt="">
+        <img class="logo" src="images\logo.svg" alt="">
+      </div>
+      <div class="">
+        <img src="images\icon-cart.svg" alt="">
+        <img class="avtr" src="images\image-avatar.png" alt="">
+      </div>
+    </div>
+
   </header>
+  <!-- Carousel -->
+  <div class="carousel">
+    <img class="caro-nxt caro-pointer" src="images\icon-previous.svg" alt="">
+    <img class="caro-img" src="images\image-product-1.jpg" alt="">
+    <img class="caro-prev caro-pointer" src="images\icon-next.svg" alt="">
+  </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <h4>Sneaker Company</h4>
+  <h2>Fall Limited Edition Sneakers</h2>
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+  </p>
+  <div class="">
+    <p>$125.00</p>
+    <p>50%</p>
+    <p>$250.00</p>
+  </div>
 
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <div class="">
+    <img src="images\icon-minus.svg" alt="">
+    <p>0</p>
+    <img src="images\icon-plus.svg" alt="">
+  </div>
+  <button type="button" name="button">Add to cart</button>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://gitbub.com/idjeffzy">idjeffzy</a>.
   </div>
+  <!-- index.js -->
+  <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>

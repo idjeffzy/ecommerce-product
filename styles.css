@@ -1,0 +1,117 @@
+/* Tag Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+body {
+  overflow: hidden;
+} */
+/* ID Selectors */
+/* Class Selectors */
+/* Navigation */
+.sidenav {
+  background-color: #fff;
+  color: #000;
+  padding-top: 24px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  width: 0;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.navopts {
+  display: flex;
+  flex-direction: column;
+  margin: 37px 0 10px;
+}
+
+.closebtn {
+  padding-left: 25px;
+}
+
+.sidenav a {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 2.6;
+  padding-left: 25px;
+}
+
+.sidenav a:hover {
+  background-color: hsl(26, 100%, 55%);
+}
+
+/* header */
+header {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px 20px;
+}
+
+.sidenavbtn {
+  margin-right: 12px;
+}
+
+.avtr {
+  margin-left: 20px;
+  width: 24px;
+}
+
+.logo {
+  vertical-align: baseline;
+}
+
+.carousel {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.caro-img {
+  width: 100%;
+}
+
+.caro-pointer {
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  padding: 12px 14px;
+  width: 10px;
+}
+
+.caro-prev {
+  right: 15px;
+}
+
+.caro-nxt {
+  left: 15px;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
