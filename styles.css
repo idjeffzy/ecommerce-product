@@ -23,7 +23,6 @@ body {
   overflow: hidden;
   width: 0;
   transition: 0.5s;
-  transition-timing-function: ease-out;
 }
 
 .navopts {
@@ -43,6 +42,7 @@ body {
   font-weight: 700;
   line-height: 2.6;
   padding-left: 25px;
+  transition: 0.5s;
 }
 
 .sidenav a:hover {
