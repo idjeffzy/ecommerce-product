@@ -36,11 +36,7 @@ body {
 }
 
 .sidenav a {
-  font-family: 'Kumbh Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-weight: 700;
-  line-height: 2.6;
+  font: bold 18px/2.6 'Kumbh Sans', sans-serif;
   padding-left: 25px;
   transition: 0.5s;
 }
@@ -81,7 +77,7 @@ header {
 /* Carousel */
 .carousel {
   position: relative;
-  margin: 30px auto 30px;
+  margin: 30px auto 27px;
   width: 100%;
   max-width: 100%;
   max-height: 338px;
@@ -109,6 +105,84 @@ header {
 
 .caro-nxt {
   right: 15px;
+}
+
+/* Item Description */
+.pro-des {
+  padding-left: 24px;
+}
+
+.sn-com {
+  color: hsl(26, 100%, 55%);
+  font: 13px 'Kumbh Sans', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.itm-nm {
+  font: bolder 28px 'Kumbh Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.itm-des {
+  font: bold 15px/1.7 'Kumbh Sans', sans serif;
+  color: hsl(220, 14%, 75%);
+}
+
+/* PRICING */
+.pricing {
+  margin: 10px auto;
+  padding: 12px 24px;
+}
+
+.prc-box {
+  font: bold 30px 'Kumbh Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 20px;
+}
+
+.prc {}
+
+.amt_dscnt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dscnt {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-left: -28px;
+  padding: 3px 10px 3px 9px;
+}
+
+.dscnt-amt {
+  color: hsl(220, 14%, 75%);
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+/* Price Contorls */
+.prc-ctrl {
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Kumb', sans-serif;
+  justify-content: space-between;
+  padding: 20px 22px;
+}
+
+.current-items {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* attribution */
