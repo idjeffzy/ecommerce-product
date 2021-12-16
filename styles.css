@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.cutted {
+  overflow: hidden;
+}
+
 /* ID Selectors */
 /* Class Selectors */
 /* Navigation */
@@ -15,7 +19,7 @@
   top: 0;
   left: -50px;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
   width: 0;
   transition: 0.5s;
@@ -41,6 +45,14 @@
   background-color: hsl(26, 100%, 55%);
 }
 
+.cover {
+  background-color: rgba(0, 0, 0, .75);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
 /* header */
 header {
   background-color: #ffffff;
@@ -59,6 +71,12 @@ header {
 
 .sidenavbtn {
   margin-right: 12px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .avtr {
