@@ -142,7 +142,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
 }
 
 .prc {}
@@ -183,6 +183,25 @@ header {
 .current-items {
   font-size: 18px;
   font-weight: bold;
+}
+
+.add-btn-div {
+  padding: 0 24px;
+}
+
+.add-btn-img {
+  color: #fff;
+}
+
+.add-btn {
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font: bold 15px 'Kumbh Sans', sans-serif;
+  margin: auto;
+  padding: 15px 0;
+  width: 100%;
 }
 
 /* attribution */

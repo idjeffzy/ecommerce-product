@@ -37,9 +37,19 @@ document.querySelector(".caro-prev").addEventListener("click", function () {
 // END
 
 // Pricing Calc
-var count = 1;
-let items = document.querySelector(".no-of-itms").innerHTML;
+var count = document.querySelector(".no-of-itms").innerHTML;
+
+// add-itm
 document.querySelector(".add-itm").addEventListener("click", function () {
-  items++;
-  items = count;
+  count++;
+  document.querySelector(".no-of-itms").innerHTML = count;
+})
+
+// Rmv--itms
+document.querySelector(".rmv-itm").addEventListener("click",function () {
+  count--;
+  if (count<0) {
+    count=0
+  }
+  document.querySelector(".no-of-itms").innerHTML = count;
 })
