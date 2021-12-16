@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 /* ID Selectors */
 /* Class Selectors */
 /* Navigation */
@@ -206,10 +202,14 @@ header {
 
 /* attribution */
 .attribution {
-  font-size: 11px;
+  font: bold 80% 'Kumbh Sans', sans-serif;
   text-align: center;
+  background-color: hsl(26, 100%, 55%);
+  margin-top: 25px;
+  padding: 18px 24px;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+  text-decoration: none;
 }
