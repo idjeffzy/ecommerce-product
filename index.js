@@ -2,6 +2,7 @@ function opensidenav(){
   document.querySelector(".sidenav").style.width = "68%";
   document.querySelector(".sidenav").style.left = "0";
   document.querySelector("body").classList.toggle("cutted");
+  document.
 }
 document.querySelector(".sidenavbtn").addEventListener("click", opensidenav);
 

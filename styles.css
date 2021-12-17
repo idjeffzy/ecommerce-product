@@ -49,6 +49,9 @@
   background-color: rgba(0, 0, 0, .75);
   height: 100vh;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
   width: 100%;
   z-index: 2;
 }
