@@ -232,8 +232,7 @@ header {
 .cart-div {
   background-color: #fff;
   border-radius: 10px;
-  /* box-shadow: 0 32px 200px 5px hsl(220, 13%, 13%); */
-  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 20%);
   font: bold 18px 'Kumbh Sans', sans-serif;
   position: absolute;
   top: 78px;
@@ -265,6 +264,7 @@ header {
   align-items: center;
   display: flex;
   height: 50px;
+  margin-top: 10px;
 }
 
 /* Thumbnail */

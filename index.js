@@ -56,3 +56,13 @@ document.querySelector(".rmv-itm").addEventListener("click",function () {
   }
   document.querySelector(".no-of-itms").innerHTML = count;
 })
+
+// Remove Carts
+function remove(e) {
+  document.querySelector(".item-pack").remove();
+}
+var itp = document.querySelector(".item-pack");
+for (var i = 0; i < itp.length; i++) {
+  itp[i]
+}
+document.querySelector(".del-itp-btn").addEventListener("click", remove);
