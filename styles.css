@@ -51,9 +51,11 @@
   position: absolute;
   top: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   transition: 0.5s;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -70,7 +72,7 @@ header {
 .header-items {
   display: flex;
   justify-content: space-between;
-  padding: 20px 24px 20px;
+  padding: 20px 24px 22px;
 }
 
 .sidenavbtn {
@@ -223,6 +225,109 @@ header {
   font: bold 16px 'Kumbh Sans', sans-serif;
   margin: auto;
   padding: 18px 0;
+  width: 100%;
+}
+
+/* Cart Items Div */
+.cart-div {
+  background-color: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 32px 200px 5px hsl(220, 13%, 13%); */
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%);
+  font: bold 18px 'Kumbh Sans', sans-serif;
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 23px 25px 28px;
+  width: 83%;
+  z-index: 1;
+}
+
+.cart-div h3 {
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.cart-div h3::after {
+  content: "";
+  background: rgba(182, 188, 200, .3);
+  height: 1px;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+}
+
+/* Item Packs */
+.item-pack {
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+
+/* Thumbnail */
+.itp-img-div {
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+.itp-thumbnail {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+/* ITP Name&Pricing */
+.itp-name-div {
+  color: hsl(220, 14%, 75%);
+  display: flex;
+  flex-direction: column;
+  font: bold 16px/1.6 'Kumbh Sans', sans serif;
+  justify-content: space-between;
+  max-height: 50px;
+}
+
+.itp-name {
+  letter-spacing: 0.7;
+}
+
+/* Cart ITP Pricing */
+.itp-prc {
+  font-size: 17px;
+}
+
+.itp-sub-ttl {
+  color: #000;
+}
+
+/* Del Btn Div */
+.del-itp-div {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 50px;
+}
+
+.del-itp-btn {
+  cursor: pointer;
+}
+
+/* Checkout Btn */
+.checkout-btn-div {
+  margin: auto;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.checkout-btn {
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(223, 64%, 98%);
+  font: bold 16px 'kumbh Sans', sans serif;
+  padding: 19px 30px;
   width: 100%;
 }
 
