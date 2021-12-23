@@ -8,10 +8,6 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-.cutted {
-  overflow: hidden;
-}
-
 /* ID Selectors */
 /* Class Selectors */
 /* Navigation */
@@ -46,7 +42,11 @@ body {
 }
 
 .sidenav a:hover {
-  background-color: hsl(26, 100%, 55%);
+  background-color: #FF7D1A;
+}
+
+.sidenav a:active {
+  background-color: #FF7D1A;
 }
 
 .blurred {
