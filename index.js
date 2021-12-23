@@ -40,29 +40,38 @@ document.querySelector(".caro-prev").addEventListener("click", function () {
 // END
 
 // Pricing Calc
-var count = document.querySelector(".no-of-itms").innerHTML;
+var units = document.querySelector(".no-of-itms").innerHTML;
 
 // add-itm
 document.querySelector(".add-itm").addEventListener("click", function () {
-  count++;
-  document.querySelector(".no-of-itms").innerHTML = count;
+  units++;
+  document.querySelector(".no-of-itms").innerHTML = units;
 })
 
 // Rmv--itms
 document.querySelector(".rmv-itm").addEventListener("click",function () {
-  count--;
-  if (count<0) {
-    count=0
+  units--;
+  if (units<0) {
+    units=0
   }
-  document.querySelector(".no-of-itms").innerHTML = count;
+  document.querySelector(".no-of-itms").innerHTML = units;
 })
 
+
+// Add to Carts
+function addToCart() {
+  var price = 125.00;
+  document.querySelector(".empty-note").style.display ="none";
+  document.querySelector(".item-pack").style.display ="flex";
+  document.querySelector(".checkout-btn-div").style.display ="block";
+  // Items Counter
+  document.querySelector(".counter").style.display ="block";
+  document.querySelector(".counter").innerHTML =units;
+  // Price Calc
+  document.querySelector(".itp-unit").innerHTML = " " + units + " ";
+  document.querySelector(".itp-sub-ttl").innerHTML = " $" + price * units + ".00";
+}
+
+document.querySelector(".add-btn").addEventListener("click", addToCart);
+
 // Remove Carts
-function remove(e) {
-  document.querySelector(".item-pack").remove();
-}
-var itp = document.querySelector(".item-pack");
-for (var i = 0; i < itp.length; i++) {
-  itp[i]
-}
-document.querySelector(".del-itp-btn").addEventListener("click", remove);

@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 .cutted {
   overflow: hidden;
 }
@@ -83,6 +87,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.cart-counter {
+  position: relative;
+}
+
+.counter {
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 8px;
+  color: #fff;
+  display: none;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  font-size: 9px;
+  font-weight: bolder;
+  padding: 1px 7px;
 }
 
 .avtr {
@@ -235,11 +256,12 @@ header {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 20%);
   font: bold 18px 'Kumbh Sans', sans-serif;
   position: absolute;
-  top: 78px;
+  top: 75px;
   left: 0;
   right: 0;
   margin: auto;
   padding: 23px 25px 28px;
+  min-height: 205px;
   width: 83%;
   z-index: 1;
 }
@@ -259,12 +281,20 @@ header {
   width: 100%;
 }
 
+.empty-note {
+  display: block;
+  color: hsl(219, 9%, 45%);
+  font: bolder 16px 'Kumbh Sans', sans serif;
+  transform: translate(27%, 55px);
+}
+
 /* Item Packs */
 .item-pack {
   align-items: center;
-  display: flex;
+  display: none;
   height: 50px;
   margin-top: 10px;
+  transition: 0.6s;
 }
 
 /* Thumbnail */
@@ -316,8 +346,10 @@ header {
 
 /* Checkout Btn */
 .checkout-btn-div {
+  display: none;
   margin: auto;
   margin-top: 25px;
+  transition: 0.6s;
   width: 100%;
 }
 
@@ -327,7 +359,7 @@ header {
   border-radius: 10px;
   color: hsl(223, 64%, 98%);
   font: bold 16px 'kumbh Sans', sans serif;
-  padding: 19px 30px;
+  padding: 18px 30px;
   width: 100%;
 }
 
