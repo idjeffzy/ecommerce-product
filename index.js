@@ -54,7 +54,18 @@ document.querySelector(".rmv-itm").addEventListener("click",function () {
   }
   document.querySelector(".no-of-itms").innerHTML = units;
 })
+// Cart
+// View Cart
+document.querySelector(".cart-counter").addEventListener("click", cartToggle);
 
+function cartToggle() {
+  var cart = document.querySelector(".cart-div");
+  if (cart.style.display === "none") {
+    cart.style.display = "block";
+  } else {
+    cart.style.display = "none";
+  }
+}
 
 // Add to Carts
 function addToCart() {

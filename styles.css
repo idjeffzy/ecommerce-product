@@ -254,6 +254,7 @@ header {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 20%);
+  display: none;
   font: bold 18px 'Kumbh Sans', sans-serif;
   position: absolute;
   top: 75px;
