@@ -87,3 +87,13 @@ function addToCart() {
 document.querySelector(".add-btn").addEventListener("click", addToCart);
 
 // Remove Carts
+function removeItem() {
+  document.querySelector(".item-pack").style.display ="none";
+}
+
+document.querySelector(".del-itp-btn").addEventListener("click", removeItem);
+
+// Let Cart Be emoty if no Items
+if (document.querySelector(".item-pack").style.display ="none") {
+ document.querySelector(".checkout-btn-div").style.display ="none";
+}
