@@ -70,15 +70,18 @@ function cartToggle() {
 // Add to Carts
 function addToCart() {
   var price = 125.00;
+  var totalUnits = units
   document.querySelector(".empty-note").style.display ="none";
   document.querySelector(".item-pack").style.display ="flex";
   document.querySelector(".checkout-btn-div").style.display ="block";
   // Items Counter
   document.querySelector(".counter").style.display ="block";
-  document.querySelector(".counter").innerHTML =units;
+  document.querySelector(".counter").innerHTML =totalUnits;
   // Price Calc
-  document.querySelector(".itp-unit").innerHTML = " " + units + " ";
-  document.querySelector(".itp-sub-ttl").innerHTML = " $" + price * units + ".00";
+  document.querySelector(".itp-unit").innerHTML = " " + totalUnits + " ";
+  document.querySelector(".itp-sub-ttl").innerHTML = " $" + price * totalUnits + ".00";
+  // Reset units counter
+  document.querySelector(".no-of-itms").innerHTML = 0;
 }
 
 document.querySelector(".add-btn").addEventListener("click", addToCart);
