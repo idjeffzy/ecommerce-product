@@ -68,11 +68,6 @@ function cartToggle() {
 
 document.querySelector(".cart-counter").addEventListener("click", cartToggle);
 
-if (cart.style.display ==="none") {
-  document.querySelector("body").addEventListener(".click" document.querySelector(".cart-div").style.display ="none");
-
-}
-
 // Add to Carts
 function addToCart() {
   var price = 125.00;
